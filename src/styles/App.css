@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #0a0a0a;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+.App {
+  min-height: 100vh;
+  position: relative;
+}
+
+.three-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.three-background canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Ensure content is above Three.js background */
+.navbar,
+.home-page,
+.features-page,
+.pricing-page,
+.contact-page,
+.signup-page,
+.footer {
+  position: relative;
+  z-index: 1;
+}
+
+/* Button styles */
+.btn-primary {
+  background: linear-gradient(135deg, #1e40af, #0891b2);
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(30, 64, 175, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(30, 64, 175, 0.4);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid #1e40af;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: rgba(30, 64, 175, 0.1);
+  border-color: #0891b2;
+}
+
+/* Workflow badge */
+.workflow-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.badge-dot {
+  width: 8px;
+  height: 8px;
+  background: #1e40af;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .btn-primary, .btn-secondary {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+}

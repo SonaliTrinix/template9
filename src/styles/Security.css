@@ -1,0 +1,314 @@
+.security-page {
+  min-height: 100vh;
+}
+
+.security-hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 6rem 2rem 4rem;
+  text-align: center;
+}
+
+.security-title {
+  font-size: 3rem;
+  margin: 1rem 0;
+  font-weight: 700;
+}
+
+.security-subtitle {
+  font-size: 1.25rem;
+  max-width: 700px;
+  margin: 1rem auto;
+  opacity: 0.95;
+  line-height: 1.6;
+}
+
+.security-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: -3rem auto 0;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.stat-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.stat-box h3 {
+  font-size: 2.5rem;
+  color: #6366f1;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.stat-box p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.security-features-section {
+  padding: 6rem 2rem 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.security-features-section h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 3rem;
+}
+
+.security-features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.security-feature-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s;
+}
+
+.security-feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.security-feature-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.security-feature-card h3 {
+  font-size: 1.375rem;
+  color: #333;
+  margin-bottom: 0.75rem;
+}
+
+.security-feature-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.certifications-section {
+  padding: 4rem 2rem;
+  background: #f8f9fa;
+  text-align: center;
+}
+
+.certifications-section h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.certifications-subtitle {
+  font-size: 1.125rem;
+  color: #666;
+  margin-bottom: 3rem;
+}
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.certification-badge {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s;
+}
+
+.certification-badge:hover {
+  transform: scale(1.05);
+}
+
+.cert-icon {
+  font-size: 3rem;
+  margin-bottom: 0.75rem;
+}
+
+.certification-badge p {
+  font-weight: 600;
+  color: #333;
+}
+
+.data-protection-section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.data-protection-section h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 3rem;
+}
+
+.data-protection-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.protection-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.protection-card h3 {
+  font-size: 1.375rem;
+  color: #6366f1;
+  margin-bottom: 1.5rem;
+}
+
+.protection-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.protection-card li {
+  padding: 0.75rem 0;
+  color: #666;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.check-icon {
+  color: #6366f1;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.security-practices {
+  padding: 4rem 2rem;
+  background: #f8f9fa;
+  text-align: center;
+}
+
+.security-practices h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 3rem;
+}
+
+.practices-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.practice-item {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.practice-item h4 {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.practice-item p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.security-resources {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.security-resources h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 3rem;
+}
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.resource-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.resource-card h3 {
+  font-size: 1.375rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.resource-card p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.security-cta {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.security-cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.security-cta p {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+}
+
+@media (max-width: 768px) {
+  .security-title {
+    font-size: 2rem;
+  }
+
+  .security-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .security-features-grid,
+  .data-protection-grid,
+  .practices-grid,
+  .resources-grid {
+    grid-template-columns: 1fr;
+  }
+}
