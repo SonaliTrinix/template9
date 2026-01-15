@@ -20,6 +20,10 @@ body {
   position: relative;
 }
 
+.main-content {
+  padding-top: 120px;
+}
+
 .three-background {
   position: fixed;
   top: 0;
@@ -37,7 +41,6 @@ body {
 }
 
 /* Ensure content is above Three.js background */
-.navbar,
 .home-page,
 .features-page,
 .pricing-page,
@@ -46,6 +49,10 @@ body {
 .footer {
   position: relative;
   z-index: 1;
+}
+
+.navbar {
+  z-index: 1000;
 }
 
 /* Button styles */
